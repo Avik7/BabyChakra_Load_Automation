@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="LoadSuite">
+  <test thread-count="5" name="LoadTest">
+    <classes>
+      <class name="MavenFramework1.ChatUser"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
