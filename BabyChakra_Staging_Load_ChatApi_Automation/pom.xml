@@ -10,7 +10,7 @@
   
   <profiles>
   <profile>
-  <id>Regression</id>
+  <id>Load</id>
   <build>
     <pluginManagement>
       <plugins>
