@@ -29,7 +29,7 @@ public class Broken_Link_WebTest {
         HttpURLConnection huc = null;
         int respCode = 200;
         
-        System.setProperty("webdriver.chrome.driver", "/Users/avik/Downloads/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/Production_Broken_Link/BabyChakra_Staging_Load_ChatApi_Automation/src/main/java/MavenFramework1/chromedriver");
         //WebDriver driver = new SafariDriver();
         WebDriver driver = new ChromeDriver();
         
