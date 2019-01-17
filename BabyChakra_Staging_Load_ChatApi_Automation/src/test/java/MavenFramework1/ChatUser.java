@@ -42,7 +42,7 @@ public class ChatUser {
 	
 	
 	@Test(priority=0)
-	public void ChatUserRegistration() throws NullPointerException
+	public void ChatUserRegistrationHindiFemale() throws NullPointerException
 	{
 
 //		 public static void main(String[] args) {
@@ -86,7 +86,7 @@ public class ChatUser {
    
 	
 	@Test(priority=1)
-	public void AddToLanguage() throws NullPointerException
+	public void AddToLanguageHindiFemale() throws NullPointerException
 	{
 
 //		 public static void main(String[] args) {
@@ -124,9 +124,10 @@ public class ChatUser {
 	       
 	} 
 	
+	
 
 	@Test(priority=2)
-	public void AddToMonth() throws NullPointerException
+	public void AddToMonthHindiFemale() throws NullPointerException
 	{ 
 
 //		 public static void main(String[] args) {
@@ -162,6 +163,129 @@ public class ChatUser {
 		}
 	       
 	}
+	
+	@Test(priority=3)
+	public void ChatUserRegistrationEnglishMale() throws NullPointerException
+	{
+
+//		 public static void main(String[] args) {
+		
+		    //RestAssured.baseURI = prop.getProperty("Host");
+			RestAssured.baseURI = "http://releaseapi.babychakra.com";
+
+		for(i=150166;i<150171;i++)
+		{
+
+		Response res = given().
+			
+				//queryParam("UserId",i).
+				
+		//Particular User
+			   header("User ID","88236").
+		       header("Authorization","Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjg4MjM2LCJpc3MiOiJodHRwOi8vcmVsZWFzZS5iYWJ5Y2hha3JhLmNvbSIsImlhdCI6MTUzNTM2ODEwOSwiZXhwIjoxNTU2OTY4MTA5LCJuYmYiOjE1MzUzNjgxMDksImp0aSI6IlhQQmtHZDlUZjJWV3U4cDYifQ.2FLWF9knLbE8_tXYUYCKFKjH1VMxFMpcYp0IEJhB488").
+		       
+		//Global User
+//		       header("app-identifier","android_consumer").
+//		       header("app-version","2.9.3.1").
+//		       header("app-signature","app_signature_2_1_5_4").
+//		       header("appuid","20403").
+		       
+//		       body(PayLoad.ChatUser()).
+		       
+		       
+	    when().
+	    
+	           //post(Resources.ChatUser()).
+	           post("/firebase/register_user/"+i).
+	           
+	    then().log().all().assertThat().statusCode(200).and().
+
+	       extract().response();
+
+		}
+	       
+	}
+	
+  
+	
+	@Test(priority=4)
+	public void AddToLanguageEnglishMale() throws NullPointerException
+	{
+
+//		 public static void main(String[] args) {
+		
+		//RestAssured.baseURI = prop.getProperty("Host");
+		RestAssured.baseURI = "http://releaseapi.babychakra.com";
+		 
+
+		for(j=150166;j<150171;j++)
+		{
+
+		Response res = given().
+				
+				queryParam("gender","1").
+				queryParam("language","en").
+				
+		//Particular User
+//			   header("User ID",prop.getProperty("ExistingUserID")).
+//		       header("Authorization",prop.getProperty("ExistingUserAuthToken")).
+		       
+		       header("User ID","88236").
+		       header("Authorization","Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjg4MjM2LCJpc3MiOiJodHRwOi8vcmVsZWFzZS5iYWJ5Y2hha3JhLmNvbSIsImlhdCI6MTUzNTM2ODEwOSwiZXhwIjoxNTU2OTY4MTA5LCJuYmYiOjE1MzUzNjgxMDksImp0aSI6IlhQQmtHZDlUZjJWV3U4cDYifQ.2FLWF9knLbE8_tXYUYCKFKjH1VMxFMpcYp0IEJhB488").
+		       
+		       
+	    when().
+	    
+	           //post(Resources.ChatUser()).
+	           post("/firebase/add_to_language_group/"+j).
+	           
+	    then().log().all().assertThat().and().
+
+	       extract().response();
+
+		}
+	       
+	} 
+	
+
+	@Test(priority=5)
+	public void AddToMonthEnglishMale() throws NullPointerException
+	{ 
+
+//		 public static void main(String[] args) {
+		
+		//RestAssured.baseURI = prop.getProperty("Host");
+		RestAssured.baseURI = "http://releaseapi.babychakra.com"; 
+		
+
+		for(k=150166;k<150171;k++)
+		{
+
+		Response res = given().
+				
+				queryParam("birth-date","2018-12-10").
+
+		//Particular User
+//			   header("User ID",prop.getProperty("ExistingUserID")).
+//		       header("Authorization",prop.getProperty("ExistingUserAuthToken")).
+		       
+		       header("User ID","88236").
+		       header("Authorization","Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjg4MjM2LCJpc3MiOiJodHRwOi8vcmVsZWFzZS5iYWJ5Y2hha3JhLmNvbSIsImlhdCI6MTUzNTM2ODEwOSwiZXhwIjoxNTU2OTY4MTA5LCJuYmYiOjE1MzUzNjgxMDksImp0aSI6IlhQQmtHZDlUZjJWV3U4cDYifQ.2FLWF9knLbE8_tXYUYCKFKjH1VMxFMpcYp0IEJhB488").
+		       
+		       
+	    when().
+	    
+	           //post(Resources.ChatUser()).
+	           post("/firebase/add_to_month_group/"+k).
+	           
+	    then().log().all().assertThat().and().
+
+	       extract().response();
+
+		}
+	       
+	}
+	
 	
 	
 }
