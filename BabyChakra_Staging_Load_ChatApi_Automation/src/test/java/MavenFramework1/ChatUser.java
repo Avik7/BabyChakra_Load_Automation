@@ -70,7 +70,7 @@ public class ChatUser {
 //		       body(PayLoad.ChatUser()).
 		       
 		       
-	    when().
+	    when(). 
 	    
 	           //post(Resources.ChatUser()).
 	           post("/firebase/register_user/"+i).
@@ -85,7 +85,7 @@ public class ChatUser {
 	
    
 	
-	@Test(priority=1)
+	@Test(priority=2)
 	public void AddToLanguageHindiFemale() throws NullPointerException
 	{
 
@@ -126,7 +126,7 @@ public class ChatUser {
 	
 	
 
-	@Test(priority=2)
+	@Test(priority=4)
 	public void AddToMonthHindiFemale() throws NullPointerException
 	{ 
 
@@ -164,7 +164,7 @@ public class ChatUser {
 	       
 	}
 	
-	@Test(priority=3)
+	@Test(priority=1)
 	public void ChatUserRegistrationEnglishMale() throws NullPointerException
 	{
 
@@ -208,7 +208,7 @@ public class ChatUser {
 	
   
 	
-	@Test(priority=4)
+	@Test(priority=3)
 	public void AddToLanguageEnglishMale() throws NullPointerException
 	{
 
