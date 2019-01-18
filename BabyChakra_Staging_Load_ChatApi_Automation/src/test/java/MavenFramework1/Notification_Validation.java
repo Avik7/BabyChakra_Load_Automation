@@ -32,8 +32,9 @@ public class Notification_Validation {
 	public void UserTagAutoCompleteLoad() throws IOException
 	{
 		//Properties prop = new Properties();
-		FileInputStream fis = new FileInputStream("/var/lib/jenkins/workspace/Staging_Load_ChatAPI/BabyChakra_Staging_Load_ChatApi_Automation/src/main/java/MavenFramework1/Environment.properties");
-	    prop.load(fis);
+		FileInputStream fis = new FileInputStream("/var/lib/jenkins/workspace/Staging_Notification_Validation/BabyChakra_Staging_Load_ChatApi_Automation/src/main/java/MavenFramework1/Environment.properties");
+		//FileInputStream fis = new FileInputStream("/Users/avik/git/BabyChakra_Load_Automation/BabyChakra_Staging_Load_ChatApi_Automation/src/main/java/MavenFramework1/Environment.properties");
+		prop.load(fis);
 	}
 	@Test
 	public void UserTagAutoCompleteTest() throws NullPointerException
