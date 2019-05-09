@@ -59,7 +59,7 @@ public class ChatUser {
 				
 		//Particular User
 			   header("User ID","88236").
-		       header("Authorization","Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjg4MjM2LCJpc3MiOiJodHRwOi8vcmVsZWFzZS5iYWJ5Y2hha3JhLmNvbSIsImlhdCI6MTUzNTM2ODEwOSwiZXhwIjoxNTU2OTY4MTA5LCJuYmYiOjE1MzUzNjgxMDksImp0aSI6IlhQQmtHZDlUZjJWV3U4cDYifQ.2FLWF9knLbE8_tXYUYCKFKjH1VMxFMpcYp0IEJhB488").
+		       header("Authorization","Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjg4MjM2LCJpc3MiOiJodHRwOi8vcmVsZWFzZS5iYWJ5Y2hha3JhLmNvbSIsImlhdCI6MTU1NzM5Mjg3NiwiZXhwIjoxNTc4OTkyODc2LCJuYmYiOjE1NTczOTI4NzYsImp0aSI6InoyUUN3bTZRRm9jeGJaTDEifQ.1BrTWs7nV15oo77HeSP4-Z3G0kuNLtkzalFBGZyG_4Y").
 		       
 		//Global User
 //		       header("app-identifier","android_consumer").
